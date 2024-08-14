@@ -1,0 +1,178 @@
+/* Navbar styles */
+.navbar {
+  background-color: #343a40;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand:hover {
+  color: #1076dc;
+  transition: color 0.3s ease-in-out;
+}
+
+.add-todo-btn-container {
+  margin-left: auto;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+/* Combined class name */
+.btn.add {
+  background-color: #28a745;
+  margin-top: 15px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.add:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.btn.add:focus {
+  outline: none;
+}
+
+.btn.add:active {
+  background-color: #1e7e34;
+  transform: scale(0.98);
+}
+
+/* Container styles */
+.todos {
+  background: url('https://cdn.pixabay.com/photo/2017/08/04/10/32/background-2579710_640.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* Table styles */
+.table-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.todos-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.todos-table th,
+.todos-table td {
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.todos-table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.todos-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.todos-table tr:hover {
+  background-color: #ddd;
+}
+
+.btn-icon {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Modal styles */
+.modal.show.fade-in {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+
+  .todos-table th,
+  .todos-table td {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .todos-table th,
+  .todos-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .btn.add {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .todos {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .todos-table th,
+  .todos-table td {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+
+  .modal-dialog {
+    margin: 1rem auto;
+  }
+}

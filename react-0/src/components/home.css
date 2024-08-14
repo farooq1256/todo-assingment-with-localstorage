@@ -1,0 +1,96 @@
+/* Container styles */
+.home-container {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(75, 14, 154, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the cards */
+.card {
+    width: 22rem;
+    /* Default size */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    /* Margin for spacing */
+    text-align: center;
+    /* Center align text in cards */
+}
+
+/* Add hover effects for the cards */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the card title */
+.card-title {
+    font-size: 1.5rem;
+    /* Font size for card title */
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for the card text */
+.card-text {
+    font-size: 1.125rem;
+    /* Font size for card text */
+    color: #666;
+}
+
+/* Responsive Design */
+
+/* For tablets and small desktops */
+@media (max-width: 992px) {
+    .card {
+        width: 90%;
+        /* Adjust card width for tablets */
+        margin: 1rem auto;
+        /* Center cards horizontally */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 15px;
+        /* Reduce padding for mobile */
+    }
+
+    .card {
+        width: 100%;
+        /* Full width for mobile */
+        margin: 0.5rem 0;
+        /* Reduce margin for mobile */
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .card-text {
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+/* For very small mobile devices */
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1.125rem;
+        /* Further adjust font size */
+    }
+
+    .card-text {
+        font-size: 0.875rem;
+        /* Further adjust font size */
+    }
+}
